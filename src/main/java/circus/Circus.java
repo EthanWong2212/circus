@@ -17,13 +17,20 @@ public class Circus {
             new Cannon(5),
             new Cannon(100)
     };
+    private static Asset[] assets = {
+            new Duck(),
+            new Parrot(),
+            new Ladder(50),
+            new Cannon(5),
+            new Cannon(100)
+    };
 
     private static void makeAnimalsTalk() {
         for (Animal a : animals) {
             System.out.println(a);
             System.out.println(a.speak());
         }
-    }
+    };
 
     private static int calculateValue(Asset[] assets) {
         int total = 0;
@@ -41,7 +48,9 @@ public class Circus {
 
     public static void main(String[] args) {
         makeAnimalsTalk();
+
         System.out.println("Total value of equipments " + calculateValue(equipments));
         System.out.println("Total value of animals " + calculateValue(animals));
+        System.out.println("Total value of everything " + calculateValue(assets));
     }
 }
