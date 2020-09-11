@@ -9,17 +9,10 @@ import circus.stuff.Ladder;
 
 public class Circus {
     private static Animal[] animals = {
-            new Duck(),
-            new Parrot()
+            new Duck("Drake"),
+            new Parrot("Polly")
     };
     private static Equipment[] equipments = {
-            new Ladder(50),
-            new Cannon(5),
-            new Cannon(100)
-    };
-    private static Asset[] assets = {
-            new Duck(),
-            new Parrot(),
             new Ladder(50),
             new Cannon(5),
             new Cannon(100)
@@ -51,6 +44,5 @@ public class Circus {
 
         System.out.println("Total value of equipments " + calculateValue(equipments));
         System.out.println("Total value of animals " + calculateValue(animals));
-        System.out.println("Total value of everything " + calculateValue(assets));
     }
 }
