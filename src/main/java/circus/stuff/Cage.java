@@ -1,7 +1,7 @@
 package circus.stuff;
 
 import circus.animal.Animal;
-
+//<T> Type Parameter
 public class Cage<T> {
     private T t;
 
